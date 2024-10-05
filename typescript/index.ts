@@ -4,6 +4,7 @@ type Pizza = {
   price: number;
 };
 
+
 type Order = {
   id: number;
   pizza: string;
@@ -20,6 +21,7 @@ const menu: Pizza[] = [
 let cashInRegister: number = 100;
 const OrderQueue: Order[] = [];
 let nextOrderId: number = 1;
+const aman : string = 'shreya'
 
 function addNewPizza(pizzaObj: Pizza) : void {
   menu.push(pizzaObj);
