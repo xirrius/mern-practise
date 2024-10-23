@@ -1,29 +1,12 @@
-import { useState } from "react";
+import Head from "./Day 4/Head";
 
-export default function App() {
-  let nextId = 0;
-  const [name, setName] = useState("");
-  const [artists, setArtists] = useState([]);
+const App = () => {
 
   return (
     <>
-      <h1>Inspiring sculptors:</h1>
-      <input value={name} onChange={(e) => setName(e.target.value)} />
-      <button
-        onClick={() => {
-          setArtists([...artists, { name }]);
-        }}
-      >
-        Add
-      </button>
-      <ul>
-        {artists.map((artist, idx) => (
-          <li key={idx}>
-            {idx}
-            {artist.name}
-          </li>
-        ))}
-      </ul>
+      <Head></Head>
     </>
   );
-}
+};
+
+export default App;
